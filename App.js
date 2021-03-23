@@ -50,8 +50,9 @@ export default class App extends React.Component {
 
  async getDirections(startLoc, desLoc) {
    try {
-     const resp = await fetch(`https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${desLoc}`)
+     const resp = await fetch(`https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${desLoc}&key=AIzaSyCPQYhkVBTkWgTzncqwSR77hmu4TAyNevQ`)
      const respJson = await resp.json();
+     console.log(respJson)
      const points = Polyline.decode(respJson.routes[0].overview_polyline.points);
      const coords = points.map(point => {
        return {
@@ -71,7 +72,7 @@ export default class App extends React.Component {
     if (latitude) {
       return (
           <MapView
-            showUserLocation
+            showsUserLocation
             style={{ flex: 1 }}
             initialRegion={{
               latitude,
