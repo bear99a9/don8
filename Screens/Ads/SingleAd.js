@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import MapView from "react-native-maps";
 import {
   Linking,
   Image,
@@ -9,6 +10,10 @@ import {
   Button,
 } from "react-native";
 import { Left, Right, Container, H1 } from "native-base";
+
+import Map from '../../Map/Map.js'
+
+const Map = new Map()
 
 const SingleAd = (props) => {
   const [item, setAd] = useState(props.route.params.item);
@@ -41,6 +46,9 @@ const SingleAd = (props) => {
           >
             {item.website}
           </Text>
+        </View>
+        <View>
+        {Map.render()}
         </View>
       </ScrollView>
     </Container>

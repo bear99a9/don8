@@ -6,7 +6,7 @@ import Polyline from "@mapbox/polyline";
 import Constants from "expo-constants";
 
 const locations = require("./location.json");
-export default class App extends React.Component {
+export default class Map extends React.Component {
   state = {
     latitude: null,
     longitude: null,
