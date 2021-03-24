@@ -49,7 +49,8 @@ router.get('/', async (req, res) => {
   });
 
 router.post("/", uploadOptions.single("image"), async (req, res) => {
-  const file = req.file;
+  console.log(req)
+  const file = req.body.image;
   // if (!file) return res.status(400).send("No image in the request");
   console.log("File:", file)
   const fileName = file ? file.filename : "no-image-icon-23494.png";

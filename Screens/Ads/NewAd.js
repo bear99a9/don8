@@ -6,6 +6,7 @@ import Toast from "react-native-toast-message"
 import AsyncStorage from "@react-native-community/async-storage";
 import AuthGlobal from "../../Context/store/AuthGlobal";
 import * as ImagePicker from "expo-image-picker"
+import mime from "mime"
 
 import Error from "../../Shared/Error";
 import baseURL from '../../assets/common/baseUrl'
@@ -14,6 +15,7 @@ import baseURL from '../../assets/common/baseUrl'
 const NewAd = (props) => {
   const context = useContext(AuthGlobal);
 
+  const [token, setToken] = useState("")
   const [title, setTitle] = useState("")
   const [location, setLocation] = useState("")
   const [description, setDescription] = useState("")
@@ -37,9 +39,10 @@ const NewAd = (props) => {
 
       AsyncStorage.getItem("jwt")
         .then((res) => {
+          setToken(res)
           axios
             .get(`${baseURL}users/${context.stateUser.user.userId}`, {
-              headers: { Authorization: `Bearer ${res}` },
+              headers: { Authorization: `Bearer ${token}` },
             })
             .then((user) => setUserProfile(user.data));
         })
@@ -61,20 +64,48 @@ const NewAd = (props) => {
   }, [])
 
   const handleSubmit = () => {
-    const ad = {
-      title,
-      location,
-      description,
-      contact,
-      charity,
-      website
-    };
+
+    console.log("Image is", mime.getType(image))
+
+    let formData = new FormData()
+
+    const newImageUri = "file:///" + image.split("file:/").join("");
+
+    formData.append("title", title)
+    formData.append("location", location)
+    formData.append("description", description)
+    formData.append("charity", charity)
+    formData.append("contact", contact)
+    formData.append("website", website)
+    formData.append("image", image)
+    // {
+    //   uri: newImageUri,
+    //   type: mime.getType(newImageUri),
+    //   name: newImageUri.split('/').pop()
+    // })
+
+    const config = {
+      headers: {
+        "Content-Type": "multipart/form-data",
+        Authorization: `Bearer ${token}`
+      }
+    }
+
+    // const ad = {
+    //   title,
+    //   location,
+    //   description,
+    //   contact,
+    //   charity,
+    //   website,
+    //   {image: {uri: image, type: mime.getType(image), name: image.split("/").pop()}}
+    // };
 
     if (![title, location, description, contact, charity, website].every((field) => {return field !== ""})) {
       setError("Please fill in all details");
     } else {
       axios
-        .post(`${baseURL}ads`, ad)
+        .post(`${baseURL}ads`, formData, config)
         .then((response) => {
           if (response.status === 201) {
             props.navigation.navigate("Home")
@@ -109,13 +140,12 @@ const NewAd = (props) => {
     if(!result.cancelled) {
       setMainImage(result.uri)
       setImage(result.uri)
-      console.log("Image picked", image)
+      console.log("Image picked", result.uri)
     }
 
   }
 
   return (
-    console.log("Loading the return"),
     <View style={styles.container}>
 
 
