@@ -12,7 +12,7 @@ const SearchedAd = (props) => {
         adsFiltered.map((item) => (
           <ListItem
             onPress={() => {
-              props.navigation.navigate("Ad Detail", { item: item });
+              props.navigation.navigate("Ad Map", { item: item });
             }}
             key={item.id}
             avatar
