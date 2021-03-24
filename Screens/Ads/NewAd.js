@@ -1,11 +1,11 @@
 import React, { useEffect, useState, useContext } from "react";
-import { View, TextInput, Text, StyleSheet, Button } from "react-native";
+import { View, TextInput, Text, StyleSheet, Button, TouchableOpacity, Image } from "react-native";
 import { ScrollView } from "react-native-gesture-handler";
 import axios from 'axios'
 import Toast from "react-native-toast-message"
 import AsyncStorage from "@react-native-community/async-storage";
 import AuthGlobal from "../../Context/store/AuthGlobal";
-
+import * as ImagePicker from "expo-image-picker"
 
 import Error from "../../Shared/Error";
 import baseURL from '../../assets/common/baseUrl'
@@ -19,7 +19,8 @@ const NewAd = (props) => {
   const [description, setDescription] = useState("")
   const [contact, setContact] = useState("")
   const [charity, setCharity] = useState(context.stateUser.user.userId)
-  // const [image, setImage] = useState()
+  const [image, setImage] = useState()
+  const [mainImage, setMainImage] = useState()
   const [website, setWebsite] = useState("")
   const [userProfile, setUserProfile] = useState();
 
@@ -45,6 +46,17 @@ const NewAd = (props) => {
         .catch((error) => console.log(error));
       }
     updateUser();
+
+    (async () => {
+      if (Platform.OS !== "web") {
+        const {
+          status,
+        } = await ImagePicker.requestCamteraPermissionsAsync();
+        if (status !== "granted") {
+          alert("Sorry, we need camera roll permissions to make this work")
+        }
+      }
+    })
 
   }, [])
 
@@ -84,11 +96,35 @@ const NewAd = (props) => {
           } else { setError("Unknown error") }
         })
     }
-};
+
+  }
+
+  const pickImage = async () => {
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ImagePicker.MediaTypeOptions.All,
+      aspect: [4,3],
+      quality: 1
+    })
+
+    if(!result.cancelled) {
+      setMainImage(result.uri)
+      setImage(result.uri)
+      console.log("Image picked", image)
+    }
+
+  }
 
   return (
     console.log("Loading the return"),
     <View style={styles.container}>
+
+
+      <View>
+        <Image source={{uri: mainImage}}/>
+        <TouchableOpacity onPress={pickImage}>
+          <Text>Add Image</Text>
+        </TouchableOpacity>
+      </View>
 
       <View style={styles.inputView}>
         <TextInput
