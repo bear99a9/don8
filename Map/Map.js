@@ -8,8 +8,8 @@ import Constants from "expo-constants";
 const locations = require("./location.json");
 export default class Map extends React.Component {
   state = {
-    latitude: null,
-    longitude: null,
+    latitude: 0.125,
+    longitude: 51.345,
     locations: locations,
   };
 
@@ -53,7 +53,7 @@ export default class Map extends React.Component {
   async getDirections(startLoc, destinationLoc) {
     try {
       const resp = await fetch(
-        `https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${destinationLoc}&key=${api_key}`
+        `https://maps.googleapis.com/maps/api/directions/json?origin=${startLoc}&destination=${destinationLoc}&key=AIzaSyChRiuf9F4XCTumcyNRtdVlhtf04fJaMTA`
       );
       const respJson = await resp.json();
       if (respJson.routes.length > 0) {
@@ -77,8 +77,15 @@ export default class Map extends React.Component {
 
   render() {
     const { latitude, longitude, coords } = this.state;
-    console.log(latitude, longitude, coords && coords.length);
+    console.log(
+      "am i inside render",
+      latitude,
+      longitude,
+      "I am the cords",
+      coords && coords.length
+    );
     if (latitude) {
+      console.log("In side the render if first part");
       return (
         <MapView
           showsUserLocation
