@@ -11,21 +11,21 @@
 
 </a>
 
-<a  href="https://github.com/ehwus/cybrdrag/graphs/commit-activity"  target="_blank">
+<a  href="https://github.com/bear99a9/don8/graphs/commit-activity"  target="_blank">
 
-<img  alt="Maintenance"  src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge"  />
+<img  alt="Maintenance"  src="https://img.shields.io/maintenance/yes/2021?style=for-the-badge"  />
 
 </a>
 
 <a  href="https://github.com/bear99a9/don8/graphs/commit-activity">
 
-<img  alt="GitHub commit activity"  src="https://img.shields.io/github/commit-activity/y/ehwus/cybrdrag?style=for-the-badge">
+<img  alt="GitHub commit activity"  src="https://img.shields.io/github/commit-activity/y/bear99a9/don8?style=for-the-badge">
 
 </a>
 
 <a  href="https://github.com/bear99a9/don8/commits/main">
 
-<img  alt="GitHub last commit"  src="https://img.shields.io/github/last-commit/ehwus/cybrdrag?style=for-the-badge">
+<img  alt="GitHub last commit"  src="https://img.shields.io/github/last-commit/bear99a9/don8?style=for-the-badge">
 
 </a>
 
