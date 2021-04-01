@@ -71,7 +71,6 @@ This project focused on us producing a working app while having fun and challeng
     - [User Story 05](#user-story-05)
     - [User Story 06](#user-story-06)
     - [User Story 07](#user-story-07)
-  - [Domain Modelling](#domain-modelling)
   - [Test-Driven Design](#test-driven-design)
   - [Behaviour-Driven Design](#behaviour-driven-design)
   - [Refactoring](#refactoring)
@@ -88,21 +87,29 @@ This project focused on us producing a working app while having fun and challeng
 
 ### Prerequisite(s)
 
-This project requires _software_. If you do not have _software_, install it using [these instructions](https://www.google.co.uk/).
+This project requires _nodejs_. If you do not have _nodejs_, install it using [these instructions](https://nodejs.org/en/download/).
+
+This project requires _npm_. If you do not have _npm_, install it using [these instructions](https://docs.npmjs.com/cli/v7/configuring-npm/install).
 
 ### Installation
 
-1. Run command `npm install`
-2. cd backend
-3. Run command `npm install`
+```sh
+~ git clone git@github.com:bear99a9/don8.git
+~ cd don8
+~ npm install
+~ cd backend
+~ npm install
+```
 
 ---
 
 ## Running the Program
 
-1. Run command `npm start` to start the frontend server.
-2. cd backend
-3. Run command `npm start` to start the backend server.
+```sh
+~ npm start (to start the frontend server)
+~ cd backend
+~ npm start (to start the backend server and database)
+```
 
 ---
 
@@ -161,20 +168,6 @@ We used Jest for tests on both the back end. We have high back end test coverage
 &nbsp;&nbsp;&nbsp;As a donor,<br>
 &nbsp;&nbsp;&nbsp;So that I can visit the charities website,<br>
 &nbsp;&nbsp;&nbsp;I'd like to be able to click on a link from the advert.
-
-#### Domain Modelling
-
-As per [Class Responsibility Collaborator](http://agilemodeling.com/artifacts/crcModel.htm) modelling, there are _n_ obvious areas of responsibility, and therefore _n_.
-
-Class: **Name**
-
-| Responsibility | Collaborators |
-| -------------- | ------------- |
-|                |
-
-The relationship between these classes can be summarised in this Domain Model Diagram:
-
-![domain_model_diagram](https://www.google.co.uk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
 
 ### Test-Driven Design
 
