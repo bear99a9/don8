@@ -44,7 +44,7 @@
 <br />
 <H1>Live Demo</H1>
 <a href="https://www.youtube.com/watch?v=epjusmKqPDY" target="_blank"><img src="./assets/landing_screen.png" 
-alt="Don8 demo link to youtube"/></br>Click here</a>
+alt="Don8 demo link to youtube" width="300" height="1000"/></br>Click here</a>
 </p>
 
 # Don8
@@ -63,17 +63,17 @@ An app that connects local and national charities to volunteers and goods in the
   - [Prerequisite(s)](#prerequisite-s-)
   - [Installation](#installation)
 - [Running the Program](#running-the-program)
+- [Testing](#testing)
 - [Development Process](#development-process)
-  - [Modelling](#modelling)
-    - [User Stories](#user-stories)
-      - [User Story 01](#user-story-01)
-      - [User Story 02](#user-story-02)
-      - [User Story 03](#user-story-03)
-      - [User Story 04](#user-story-04)
-      - [User Story 05](#user-story-05)
-      - [User Story 06](#user-story-06)
-      - [User Story 07](#user-story-07)
-    - [Domain Modelling](#domain-modelling)
+  - [User Stories](#user-stories)
+    - [User Story 01](#user-story-01)
+    - [User Story 02](#user-story-02)
+    - [User Story 03](#user-story-03)
+    - [User Story 04](#user-story-04)
+    - [User Story 05](#user-story-05)
+    - [User Story 06](#user-story-06)
+    - [User Story 07](#user-story-07)
+  - [Domain Modelling](#domain-modelling)
   - [Test-Driven Design](#test-driven-design)
   - [Behaviour-Driven Design](#behaviour-driven-design)
   - [Continuous Development](#continuous-development)
@@ -117,9 +117,17 @@ This project requires _software_. If you do not have _software_, install it usin
 
 ---
 
-## Development Process
+## Testing
 
-### Modelling
+We used Jest for tests on both the back end. We have high back end test coverage of 96.94% over 12 tests, but need to work on our front end coverage.
+
+```sh
+~ cd backend
+~ npm test
+
+```
+
+## Development Process
 
 #### User Stories
 
