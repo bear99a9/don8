@@ -55,10 +55,8 @@ Makers Academy Final Project **don8**.
 An app that connects local and national charities to volunteers and goods in their area.
 ```
 
----
+This project focused on us producing a working app while having fun and challenging our learning. We used a MERN stack with React native so this app is available on ios and android phones. The live demo is link above so please have a look at how Don8 works.
 
-- [Specification](#specification)
-  - [Requirements](#requirements)
 - [Getting Started](#getting-started)
   - [Prerequisite(s)](#prerequisite-s-)
   - [Installation](#installation)
