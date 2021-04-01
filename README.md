@@ -42,15 +42,14 @@
 </a>
 
 <br />
-
-<a href="https://www.youtube.com/watch?v=epjusmKqPDY" target="_blank"><img src="https://www.youtube.com/watch?v=epjusmKqPDY" 
-alt="Don8 demo link to youtube" width="300" height="200"/></a>
-
+<H1>Live Demo</H1>
+<a href="https://www.youtube.com/watch?v=epjusmKqPDY" target="_blank"><img src="./assets/landing_screen.png" 
+alt="Don8 demo link to youtube"/></br>Click here</a>
 </p>
 
 # Don8
 
-This repository reflects Makers Academy Final Project **don8**.
+Makers Academy Final Project **don8**.
 
 ```
 An app that connects local and national charities to volunteers and goods in their area.
