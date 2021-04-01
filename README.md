@@ -31,9 +31,6 @@ An app that connects local and national charities to volunteers and goods in the
   - [Refactoring](#refactoring)
 - [Minimum Viable Product](#minimum-viable-product)
   - [Wireframes](#wireframes)
-- [Additional Features](#additional-features)
-  - [Feature 01](#feature-01)
-  - [Wireframes](#wireframes-1)
 - [Project Conclusions](#project-conclusions)
   - [Final Appearance](#final-appearance)
   - [Specific Characteristics of Note](#specific-characteristics-of-note)
@@ -165,16 +162,6 @@ The appearance of an MVP version of our program was projected to look something 
 The most basic model of this is described as follows:
 
 ![request_return_diagram](/docs/request_return_diagram.svg)
-
----
-
-## Additional Features
-
-### Feature 01
-
-The appearance of an expanded version of our program was projected to look something like as follows:
-
-### Wireframes
 
 ---
 
