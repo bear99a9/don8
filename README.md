@@ -44,7 +44,7 @@
 <br />
 <H1>Live Demo</H1>
 <a href="https://www.youtube.com/watch?v=epjusmKqPDY" target="_blank"><img src="./assets/landing_screen.png" 
-alt="Don8 demo link to youtube" width="300" height="1000"/></br>Click here</a>
+alt="Don8 demo link to youtube" width="300" height="600"/></br>Click here</a>
 </p>
 
 # Don8
@@ -76,22 +76,13 @@ An app that connects local and national charities to volunteers and goods in the
   - [Domain Modelling](#domain-modelling)
   - [Test-Driven Design](#test-driven-design)
   - [Behaviour-Driven Design](#behaviour-driven-design)
-  - [Continuous Development](#continuous-development)
   - [Refactoring](#refactoring)
 - [Minimum Viable Product](#minimum-viable-product)
   - [Wireframes](#wireframes)
-- [Project Conclusions](#project-conclusions)
-  - [Final Appearance](#final-appearance)
-  - [Specific Characteristics of Note](#specific-characteristics-of-note)
-  - [Additional Development](#additional-development)
 - [Built With](#built-with)
 - [Author(s)](#author-s-)
 - [License(s)](#license-s-)
 - [Acknowledgements](#acknowledgements)
-
----
-
-## Specification
 
 ---
 
@@ -215,24 +206,6 @@ The appearance of an MVP version of our program was projected to look something 
 The most basic model of this is described as follows:
 
 ![request_return_diagram](/docs/request_return_diagram.svg)
-
----
-
-## Project Conclusions
-
-### Final Appearance
-
-### Specific Characteristics of Note
-
-The presented development state shows some aspects of note:
-
-1.
-
-### Additional Development
-
-With more time, we would have liked to add some additional features:
-
-1.
 
 ---
 
