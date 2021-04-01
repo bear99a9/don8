@@ -42,9 +42,11 @@
 </a>
 
 <br />
-<H1>Live Demo</H1>
+<H1 align='center'>Live Demo</H1>
+<p align='center'>
 <a href="https://www.youtube.com/watch?v=epjusmKqPDY" target="_blank"><img src="https://github.com/bear99a9/don8/blob/main/assets/ezgif.com-gif-maker.gif" 
 alt="Don8 demo link to youtube" width="300" height="600"/></br>Click here for full demo</a>
+</p>
 </p>
 
 # Don8
