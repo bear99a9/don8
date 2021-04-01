@@ -4,10 +4,11 @@ import { StyleSheet, Image, Text, SafeAreaView, View } from "react-native";
 const Header = () => {
   return (
     <SafeAreaView style={styles.header}>
-      {// <Text style={styles.title}>Don8</Text>
+      {
+        // <Text style={styles.title}>Don8</Text>
       }
       <Image
-        source={require("../assets/logo_hourglass_rounded.jpg")}
+        source={require("../assets/main_logo.jpg")}
         resizeMode="contain"
         style={{ height: 50 }}
       />

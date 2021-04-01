@@ -1,4 +1,54 @@
-# don8
+<p  align="center">
+<img src="./assets/main_logo.jpg" alt="Logo"></img>
+<br />
+<br />
+
+<img  alt="Version"  src="https://img.shields.io/badge/version-1.0.0-blue.svg?style=for-the-badge&cacheSeconds=2592000"  />
+
+<a  href="https://github.com/bear99a9/don8#readme"  target="_blank">
+
+<img  alt="Documentation"  src="https://img.shields.io/badge/documentation-yes-brightgreen.svg?style=for-the-badge"  />
+
+</a>
+
+<a  href="https://github.com/ehwus/cybrdrag/graphs/commit-activity"  target="_blank">
+
+<img  alt="Maintenance"  src="https://img.shields.io/badge/Maintained%3F-yes-green.svg?style=for-the-badge"  />
+
+</a>
+
+<a  href="https://github.com/bear99a9/don8/graphs/commit-activity">
+
+<img  alt="GitHub commit activity"  src="https://img.shields.io/github/commit-activity/y/ehwus/cybrdrag?style=for-the-badge">
+
+</a>
+
+<a  href="https://github.com/bear99a9/don8/commits/main">
+
+<img  alt="GitHub last commit"  src="https://img.shields.io/github/last-commit/ehwus/cybrdrag?style=for-the-badge">
+
+</a>
+
+<a  href="https://github.com/bear99a9/don8/graphs/contributors">
+
+<img  alt="Collaborators"  src="https://img.shields.io/github/contributors/ehwus/cybrdrag?style=for-the-badge"  />
+
+</a>
+
+<a  href="https://www.npmjs.com/">
+
+<img  alt="npm"  src="https://img.shields.io/npm/v/npm?style=for-the-badge">
+
+</a>
+
+<br />
+
+<a href="https://www.youtube.com/watch?v=epjusmKqPDY" target="_blank"><img src="https://www.youtube.com/watch?v=epjusmKqPDY" 
+alt="Don8 demo link to youtube" width="300" height="200"/></a>
+
+</p>
+
+# Don8
 
 This repository reflects Makers Academy Final Project **don8**.
 
@@ -138,19 +188,15 @@ TDD was used to structure Unit Tests. These were employed to test individual cla
 
 BDD was used to structure Feature Tests. After unit tests were created to test methods and classes in isolation, feature tests were employed to test the entire program.
 
-### Continuous Development
-
-The code was continuously tested throughout development to ensure development was proceeding as expected, and that changes during development did not impact previously tested units and features.
-
 ### Refactoring
 
-Refactoring was performed after the completion of any individual unit, and periodically throughout development, in order to simplify the code. The aim was to keep the code simple and readable, rather than as compact as possible. To check that the resulting code conformed to the Ruby style guide, it was parsed before each commit through _software_, a linter.
+Refactoring was performed after the completion of any individual unit, and periodically throughout development, in order to simplify the code. The aim was to keep the code simple and readable, rather than as compact as possible. To check that the resulting code conformed to the Ruby style guide, it was parsed before each commit through _ESlint_, a linter.
 
 ---
 
 ## Minimum Viable Product
 
-- Charity can post what they need - either time or objects
+- Charity can post what they need - either time or goods
 - Volunteers can see what charities need
 
 ### Wireframes
