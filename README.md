@@ -1,18 +1,22 @@
 # don8
 
-This repository reflects Makers Academy Final Project **don8**. The general overview of this project is to connect people who wish to donate their time or goods to a charitable endeavour, and charitable endeavours that might be in a position to use those resources.
+This repository reflects Makers Academy Final Project **don8**.
+
+```
+An app that connects local and national charities to volunteers and goods in their area.
+```
 
 ---
 
 - [Specification](#specification)
-  * [Requirements](#requirements)
+  - [Requirements](#requirements)
 - [Getting Started](#getting-started)
-  * [Prerequisite(s)](#prerequisite-s-)
-  * [Installation](#installation)
+  - [Prerequisite(s)](#prerequisite-s-)
+  - [Installation](#installation)
 - [Running the Program](#running-the-program)
 - [Development Process](#development-process)
-  * [Modelling](#modelling)
-    + [User Stories](#user-stories)
+  - [Modelling](#modelling)
+    - [User Stories](#user-stories)
       - [User Story 01](#user-story-01)
       - [User Story 02](#user-story-02)
       - [User Story 03](#user-story-03)
@@ -20,20 +24,20 @@ This repository reflects Makers Academy Final Project **don8**. The general over
       - [User Story 05](#user-story-05)
       - [User Story 06](#user-story-06)
       - [User Story 07](#user-story-07)
-    + [Domain Modelling](#domain-modelling)
-  * [Test-Driven Design](#test-driven-design)
-  * [Behaviour-Driven Design](#behaviour-driven-design)
-  * [Continuous Development](#continuous-development)
-  * [Refactoring](#refactoring)
+    - [Domain Modelling](#domain-modelling)
+  - [Test-Driven Design](#test-driven-design)
+  - [Behaviour-Driven Design](#behaviour-driven-design)
+  - [Continuous Development](#continuous-development)
+  - [Refactoring](#refactoring)
 - [Minimum Viable Product](#minimum-viable-product)
-  * [Wireframes](#wireframes)
+  - [Wireframes](#wireframes)
 - [Additional Features](#additional-features)
-  * [Feature 01](#feature-01)
-  * [Wireframes](#wireframes-1)
+  - [Feature 01](#feature-01)
+  - [Wireframes](#wireframes-1)
 - [Project Conclusions](#project-conclusions)
-  * [Final Appearance](#final-appearance)
-  * [Specific Characteristics of Note](#specific-characteristics-of-note)
-  * [Additional Development](#additional-development)
+  - [Final Appearance](#final-appearance)
+  - [Specific Characteristics of Note](#specific-characteristics-of-note)
+  - [Additional Development](#additional-development)
 - [Built With](#built-with)
 - [Author(s)](#author-s-)
 - [License(s)](#license-s-)
@@ -42,10 +46,6 @@ This repository reflects Makers Academy Final Project **don8**. The general over
 ---
 
 ## Specification
-
-### Requirements
-
-1. [ ]
 
 ---
 
@@ -58,12 +58,16 @@ This project requires _software_. If you do not have _software_, install it usin
 ### Installation
 
 1. Run command `npm install`
+2. cd backend
+3. Run command `npm install`
 
 ---
 
 ## Running the Program
 
-1. Run command `npm start` to start the server.
+1. Run command `npm start` to start the frontend server.
+2. cd backend
+3. Run command `npm start` to start the backend server.
 
 ---
 
@@ -71,12 +75,7 @@ This project requires _software_. If you do not have _software_, install it usin
 
 ### Modelling
 
-
 #### User Stories
-
-The requirements can be parsed in several simple user stories.
-
-Actions are *italic*. Nouns are **bold**. Attributes of nouns are **_bold italics_**.
 
 ##### User Story 01
 
@@ -104,21 +103,21 @@ Actions are *italic*. Nouns are **bold**. Attributes of nouns are **_bold italic
 
 ##### User Story 05
 
-&nbsp;&nbsp;&nbsp;As a charity,<br>
-&nbsp;&nbsp;&nbsp;So that I can manage my adverts,<br>
-&nbsp;&nbsp;&nbsp;I'd like to be able to edit adverts.
+&nbsp;&nbsp;&nbsp;As a donor,<br>
+&nbsp;&nbsp;&nbsp;So that I can filter adverts,<br>
+&nbsp;&nbsp;&nbsp;I'd like to be able to search by location, chairty name and description.
 
 ##### User Story 06
 
-&nbsp;&nbsp;&nbsp;As a charity,<br>
-&nbsp;&nbsp;&nbsp;So that I can manage my adverts,<br>
-&nbsp;&nbsp;&nbsp;I'd like to be able to delete adverts.
+&nbsp;&nbsp;&nbsp;As a donor,<br>
+&nbsp;&nbsp;&nbsp;So that I can see how far away the advert is,<br>
+&nbsp;&nbsp;&nbsp;I'd like to be able to see the location on google maps.
 
 ##### User Story 07
 
-&nbsp;&nbsp;&nbsp;As a user,<br>
-&nbsp;&nbsp;&nbsp;So that I can ,<br>
-&nbsp;&nbsp;&nbsp;I'd like to be able to .
+&nbsp;&nbsp;&nbsp;As a donor,<br>
+&nbsp;&nbsp;&nbsp;So that I can visit the charities website,<br>
+&nbsp;&nbsp;&nbsp;I'd like to be able to click on a link from the advert.
 
 #### Domain Modelling
 
@@ -126,9 +125,9 @@ As per [Class Responsibility Collaborator](http://agilemodeling.com/artifacts/cr
 
 Class: **Name**
 
-Responsibility | Collaborators
---- | ---
- |
+| Responsibility | Collaborators |
+| -------------- | ------------- |
+|                |
 
 The relationship between these classes can be summarised in this Domain Model Diagram:
 
@@ -153,8 +152,9 @@ Refactoring was performed after the completion of any individual unit, and perio
 ---
 
 ## Minimum Viable Product
-* Charity can post what they need - either time or objects
-* Volunteers can see what charities need
+
+- Charity can post what they need - either time or objects
+- Volunteers can see what charities need
 
 ### Wireframes
 
